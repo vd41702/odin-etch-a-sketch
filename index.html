@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="javascript.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Etch-A-Sketch</title>
 </head>
 <body>
-    
+    <div id="settings">
+        <h3>Settings</h3>
+        <input type="color" id="pixelColor" name="pixelColor">
+
+        <button class="toggleable">random color</button>
+        <button class="toggleable">chosen color</button>
+        <button class="toggleable">eraser</button>
+        <button class="toggleable">toggle grid lines</button>
+        <button class="toggleable">dark mode</button>
+        <div id="gridDimSection">
+            <input type="range" name="gridDims" id="gridDims" min="1" max="100" value="16">
+            <label for="gridDims">Grid Dimensions</label>
+        </div>
+    </div>
+    <div id="drawing-section">
+        <h1>Etch - a - Sketch</h1>
+        <div id="drawing-area">
+
+        </div>
+    </div>
 </body>
 </html>

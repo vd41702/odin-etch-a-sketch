@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    justify-content: center;
+    
+    gap: 15px;
+    flex: 1 0 0;
+}
+
+#drawing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#settings {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid gray;
+    justify-content: space-around;
+    align-items: center;
+    height: 500px;
+    padding: 0 20px;
+    align-self: flex-end;
+    border-radius: 5px;
+}
+
+#settings h3 {
+    margin: 0;
+}
+
+#gridDimSection {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#drawing-area {
+    width: 500px;
+    height: 500px;
+    border: 2px solid gray;
+    border-radius: 5px;
+}
+
+.toggleable {
+    width: 120px;
+    height: 50px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+#pixelColor {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color: transparent;
+    width: 120px;
+    height: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#pixelColor::-webkit-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+#pixelColor::-moz-color-swatch {
+  border-radius: 5px;
+  border: none;
+}
+
+.drawing-area {
+
+}
+
+.tile-row {
+    display: flex;
+    flex: 1 1 0;
+}
+
+.tile {
+    flex: 1 1 0;
+}
+
+
+
