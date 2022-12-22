@@ -70,7 +70,8 @@ body {
 }
 
 .drawing-area {
-
+    display: flex;
+    flex-direction: column;
 }
 
 .tile-row {
