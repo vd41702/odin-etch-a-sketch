@@ -82,8 +82,6 @@ body {
 
 .tile {
     flex: 1 1 0;
-    min-width: 10px;
-    min-height: 10px;
 }
 
 .lightmode .gridlines .tile {

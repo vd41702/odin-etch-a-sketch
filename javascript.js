@@ -75,7 +75,8 @@ function updateGridDims(e) {
     gridDims = gridDimSelector.value;
     inkColor = colorInput.value;
     document.querySelector('#gridDimSection > label').innerText = `Grid Dimensions: ${gridDims} x ${gridDims}`;
-    console.log(e.target)
+    document.querySelector('#drawing-area').innerText = "";
+    createGrid(drawingAreaDiv);
 }
 
 function init() {
