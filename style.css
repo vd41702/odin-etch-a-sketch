@@ -92,3 +92,20 @@ body {
     border: none;
 }
 
+.lightmode .activeColorMode {
+    background-color: #778899;
+}
+
+.darkmode .activeColorMode {
+
+}
+
+.lightmode #settings button:hover {
+    border-color: white;
+}
+
+.darkmode #settings button:hover {
+    border-color: black;
+}
+
+

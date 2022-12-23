@@ -90,20 +90,28 @@ function updateChosenColor(e) {
 }
 
 function changeColorMode(e) {
+    chosenColorBtn.classList.remove('activeColorMode');
+    randColorBtn.classList.remove('activeColorMode');
+    eraserBtn.classList.remove('activeColorMode');
+
     switch (e.target.innerText) {
         case "chosen color":
             inkColor = chosenColor;
             mode = 0;
+            chosenColorBtn.classList.add('activeColorMode');
             break;
 
         case "random color":
             mode = 1;
+            randColorBtn.classList.add('activeColorMode');
             break;
 
         case "eraser":
             inkColor = "transparent";
             mode = 2;
+            eraserBtn.classList.add('activeColorMode');
             break;
+
         default:
             break;
     }
@@ -143,7 +151,6 @@ function hsv_to_rgb(h, s, v) {
     var x = chroma * (1 - Math.abs(hPrime % 2 - 1));
     var m = v - chroma;
     var r, g, b;
-    console.log(x);
     if(hPrime < 1) {
         r = chroma + m;
         g = x + m;
