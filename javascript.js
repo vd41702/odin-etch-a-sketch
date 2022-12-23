@@ -87,6 +87,9 @@ function init() {
 
 function updateChosenColor(e) {
     chosenColor = colorInput.value;
+    if(mode == 0) {
+        inkColor = chosenColor;
+    }
 }
 
 function changeColorMode(e) {
