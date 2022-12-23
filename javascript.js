@@ -127,7 +127,7 @@ function colorTile(e) {
     if(e.buttons == 0) {
         return;
     }
-    if(mode == 2) {
+    if(mode == 1) {
         /* method to generate random colors found here: https://martin.ankerl.com/2009/12/09/how-to-create-random-colors-programmatically/ */
         goldenRatioConjugate = .618033988749895;
         h = Math.random() + goldenRatioConjugate;
