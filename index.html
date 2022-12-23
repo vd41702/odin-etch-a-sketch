@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Etch-A-Sketch</title>
 </head>
-<body>
+<body class="lightmode">
     <div id="settings">
         <h3>Settings</h3>
         <input type="color" id="pixelColor" name="pixelColor">
@@ -20,13 +20,12 @@
         <button id = "darkModeToggle" class="toggleable">dark mode</button>
         <div id="gridDimSection">
             <input type="range" name="gridDims" id="gridDims" min="1" max="100" value="16">
-            <label for="gridDims">Grid Dimensions</label>
+            <label for="gridDims">Grid Dimensions:</label>
         </div>
     </div>
     <div id="drawing-section">
         <h1>Etch - a - Sketch</h1>
         <div id="drawing-area" class="gridlines">
-
         </div>
     </div>
 </body>
