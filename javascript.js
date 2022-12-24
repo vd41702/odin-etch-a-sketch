@@ -11,7 +11,7 @@
 */
 
 body = document.querySelector('body');
-document.body.onmousedown = e => {
+document.querySelector('#drawing-area').onmousedown = e => {
     e.preventDefault();
 }
 
@@ -47,14 +47,6 @@ init();
 
 
 
-
-
-
-
-
-
-
-
 function createGrid(drawingArea) {
     for(var y = 0; y < gridDims; y++) {
         tileRow = document.createElement('div')
@@ -80,13 +72,13 @@ function createGrid(drawingArea) {
 function updateGridDims(e) {
     gridDims = gridDimSelector.value;
     inkColor = colorInput.value;
-    document.querySelector('#gridDimSection > label').innerText = `Grid Dimensions: ${gridDims} x ${gridDims}`;
+    document.querySelector('#gridDimSection > label').innerText = `grid dimensions: ${gridDims} x ${gridDims}`;
     document.querySelector('#drawing-area').innerText = "";
     createGrid(drawingAreaDiv);
 }
 
 function init() {
-    document.querySelector('#gridDimSection > label').innerText = `Grid Dimensions: ${gridDims} x ${gridDims}`;
+    document.querySelector('#gridDimSection > label').innerText = `grid dimensions: ${gridDims} x ${gridDims}`;
     createGrid(drawingAreaDiv);
 }
 
