@@ -11,6 +11,9 @@
 */
 
 body = document.querySelector('body');
+document.body.onmousedown = e => {
+    e.preventDefault();
+}
 
 /* settings elements */
 colorInput = document.querySelector('#pixelColor');
@@ -60,6 +63,7 @@ function createGrid(drawingArea) {
         for(var x = 0; x < gridDims; x++) {
             tile = document.createElement('div');
             tile.classList.add('tile');
+            tile.setAttribute('draggable', 'false');
             tileRow.appendChild(tile);
         }
         drawingAreaDiv.appendChild(tileRow);
