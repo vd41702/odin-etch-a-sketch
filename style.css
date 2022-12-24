@@ -1,7 +1,6 @@
 body {
     display: flex;
     justify-content: center;
-    
     gap: 15px;
     flex: 1 0 0;
 }
@@ -84,38 +83,64 @@ body {
     flex: 1 1 0;
 }
 
-.lightmode .gridlines .tile {
-    border: 1px solid #778899;
-}
-
-.nogridlines .tile {
-    border: none;
-}
-
-.lightmode .activeColorMode {
-    background-color: #778899;
-}
-
-.darkmode .activeColorMode {
-    background-color: aliceblue;
-    color: black;
-}
-
-.lightmode #settings button:hover {
-    border-color: white;
-}
-
-.darkmode #settings button:hover {
-    border-color: black;
-}
+/* 
+ * gridlines
+ * active button
+ * button hover
+ * button
+ *
+ *
+ */
 
 .darkmode {
-    background-color: #222222;
+    background-color: #333333;
+    color: whitesmoke;
 }
 
-.darkmode .toggleable {
-    border-color: white;
-    color: white;
+.lightmode {
+ background-color: #fff;
 }
+
+ .lightmode .gridlines .tile {
+    border: 1px solid #778899;
+ }
+
+ .darkmode .gridlines .tile {
+    border: 1px solid whitesmoke;
+ }
+
+ .nogridlines {
+    border: none;
+ }
+
+ .lightmode .toggleable {
+    color: black;
+    border-color: #333333;
+ }
+
+ .darkmode .toggleable {
+    color: white;
+    border-color: whitesmoke;
+ }
+
+ .lightmode .toggleable:hover {
+    background-color: #778899;
+    color: white;
+ }
+
+ .darkmode .toggleable:hover {
+    background-color: #778899;
+    color: black;
+ }
+
+ .lightmode .activeColorMode {
+    color: white;
+    background-color: #333333;
+ }
+
+ .darkmode .activeColorMode {
+    color: black;
+    background-color: whitesmoke;
+ }
 
 

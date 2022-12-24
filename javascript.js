@@ -26,7 +26,6 @@ drawingAreaDiv = document.querySelector('#drawing-area');
 
 /* settings */
 mode = 0; //0: chosen color, 1: random color, 2: eraser
-gridLines = true;
 darkMode = false;
 gridDims = gridDimSelector.value;
 chosenColor = colorInput.value;
@@ -129,6 +128,12 @@ function toggleGridLines(e) {
 function toggleDarkMode(e) {
     body.classList.toggle('lightmode');
     body.classList.toggle('darkmode');
+    darkMode = !darkMode;
+    if(darkMode) {
+        darkModeBtn.innerText = "light mode";
+    } else {
+        darkModeBtn.innerText = "dark mode";
+    }
 }
 
 function colorTile(e) {
