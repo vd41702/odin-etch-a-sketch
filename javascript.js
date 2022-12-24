@@ -66,7 +66,10 @@ function createGrid(drawingArea) {
     }
 
     var gridTiles = document.querySelectorAll(".tile");
-    gridTiles.forEach(tile => tile.addEventListener('mouseover', colorTile));
+    gridTiles.forEach(tile => {
+        tile.addEventListener('mouseenter', colorTile);
+        tile.addEventListener('mousedown', colorTile);
+    });
 }
 
 
@@ -81,7 +84,6 @@ function updateGridDims(e) {
 function init() {
     document.querySelector('#gridDimSection > label').innerText = `Grid Dimensions: ${gridDims} x ${gridDims}`;
     createGrid(drawingAreaDiv);
-    console.log("test");
 }
 
 function updateChosenColor(e) {
